@@ -1,0 +1,48 @@
+*/.terraform/*
+*/.terraform.*
+id_rsa
+id_rsa.pub*/.terraform/*
+***/.terraform.*/*
+*/id_rsa/*
+
+
+*/.terraform/*
+***/.terraform.*/*
+*/id_rsa/*
+*/id_rsa.pub/*
+*/.terraform.*/*
+*/aws_cred.sh/*
+
+
+# Ignore Terraform plugin binaries
+**/.terraform/
+**/.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform provider binaries
+**/terraform-provider-*.exe
+
+# Ignore sensitive or system files
+*.tfvars.json
+*.log
+*.bak
+*.tmp
+
+# Ignore AWS credentials scripts
+/aws_cred.sh
+
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform provider binaries
+**/terraform-provider-*.exe
+
+# Ignore sensitive or system files
+*.tfvars.json
+*.log
+*.bak
+*.tmp
+
+# Ignore AWS credentials scripts
+/aws_cred.sh
