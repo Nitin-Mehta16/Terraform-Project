@@ -88,3 +88,7 @@ output "lb-tg-ec2" {
 output "lb-dns_name" {
   value = module.alb.lb-dns_name
 }
+
+output "ami-id" {
+  value = module.ec2.ami-id 
+}

@@ -37,3 +37,19 @@ output "public_security_group_id" {
 output "private_security_group_id" {
   value = aws_security_group.tf-sg-private.id
 }
+
+output "ami-id" {
+  value = aws_ami_from_instance.ami-backup.id 
+}
+
+output "ubuntu-ami-id" {
+  value = data.aws_ami.ubuntu.id
+}
+
+output "sg" {
+  value = aws_security_group.tf-sg-public.id
+}
+
+output "key-name" {
+  value = aws_key_pair.Tf-pvt-ec2_key.key_name
+}

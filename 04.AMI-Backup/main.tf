@@ -43,3 +43,14 @@ module "alb" {
   private2_instance_id = module.ec2.private2_instance_id
 }
 
+module "asg" {
+  source = "./modules/asg"
+  vpc_id = module.vpc.vpc_id
+  private_subnet_id = module.vpc.private_subnet_id
+  private2_subnet_id = module.vpc.private2_subnet_id
+  ami_id = module.ec2.ami-id
+  ubuntu_ami_id = module.ec2.ubuntu-ami-id
+  security_groups = module.ec2.sg
+  key_name = module.ec2.key-name
+
+}
